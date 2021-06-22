@@ -1,4 +1,7 @@
 <?php
+//require 'vendor/autoload.php';
+require 'PHPMailerAutoload.php';
+$mail = new PHPMailer;
 include "config.php";
 
 	$error=[];
@@ -52,9 +55,16 @@ if(!empty($catalogue["name"])){
 if($_POST && empty($error) && $uploadStatus ==1){
 	$sql = 'INSERT INTO enquiry (name, contact, email, company,uploads,message,website,type)
 VALUES ("'.$name.'","'.$contact.'","'.$email.'","'.$company.'","'.$uploadedFile.'","'.$message.'","'.$website.'","'.$type.'")';
+    
 if (mysqli_query($connection_mysql, $sql)) {
+    
 	include "mail.php";
-	include "admin_mail.php";
+    if($type=="seller-partner")
+	   include "sales_mail.php";
+    else if($type=="brand-partners")
+       include "brand_mail.php";
+    else if($type=="careers")
+       include "careers_mail.php";
   $ajaxRes = array('status' => 1, 'response_code' => 202, 'errors' => '');
 } else {
   $ajaxRes = array('status' => 0, 'response_code' => 201, 'errors' => 'Server not responding');

@@ -1,4 +1,5 @@
 <?php 
+$career_mail = new PHPMailer;
 $message='<!DOCTYPE>
 <html>
 <head>
@@ -35,9 +36,13 @@ a{
  <a href="https://payed.in/seller" class="h1"><img height="50" src="https://payed.in/seller/assets/dist/img/logo.png" alt="Payed" class="brand-image"></a>
 </div>
 <br><br>
-<b>Dear '.$name.',</b>
+<b>Dear Human Resources team,  </b>
 <br><br>
-Thanks for your response
+We have received a new enquiry for your department: <br>
+Name = '.$name.'<br>
+Contact Number = '.$contact.'<br>
+Email = '.$email.'<br>
+Message = '.$message.'<br>
 <br><br>
 Best Regards,<br>
 Payed family<br>
@@ -45,12 +50,13 @@ Payed family<br>
 </center>
 </body>
 </html>';
-
-$mail->setFrom('info@payed.in', 'Payed');
-$mail->addAddress($email, $name);
-$mail->isHTML(true);  
-$mail->Subject ="Your Enquiry in Payed";
-$mail->Body    =$message;
-$mail->send()
+$career_mail->isSendmail();
+$career_mail->setFrom('info@payed.in', 'Payed');
+$career_mail->addAddress('info@payed.in', 'Admin');
+$career_mail->isHTML(true);  
+$career_mail->addAttachment($targetFilePath, $fileName);
+$career_mail->Subject ="You have a new Careers enquiry!";
+$career_mail->Body    =$message;
+$career_mail->send();
 
 ?>
