@@ -118,7 +118,7 @@ a{
     min-height: 58px;
     border: 0;
 }
-#contact-form label{
+.card-body form label{
     font-family: 'Poppins-Light';
     font-size: 16px;
 }
@@ -213,4 +213,6 @@ a{
     .cat-style {
         padding-right: 14px;
     }
+    .inner-row p{ text-align: justify; font-family: Poppins-Light;}
+    p.og-txt, p.bl-txt, p.gn-txt{font-family: Poppins-Bold;}
 }
