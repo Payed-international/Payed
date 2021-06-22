@@ -1,0 +1,216 @@
+
+
+@font-face {
+   font-family: Poppins-Light;
+   src: url('../fonts/Poppins/Poppins-Light.ttf') format('truetype');
+}
+@font-face {
+   font-family: Poppins-SemiBold;
+   src: url('../fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+}
+@font-face {
+   font-family: Poppins-Regular;
+   src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+@font-face {
+   font-family: Poppins-Bold;
+   src: url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+}
+@font-face {
+   font-family: Poppins-Medium;
+   src: url('../fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+}
+.logo-img{width: 200px;}
+.header-banner{
+	background: url(../img/ComingSoon-LP-hero-banner.jpg) no-repeat;
+    background-size: cover;
+    /*width: 100%;*/
+    position: relative;
+    height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    padding: 50px;
+}
+.stay-tuned{background: url('../img/are-you.png') no-repeat ;background-size: cover; height: 150px;}
+.footer-bg{background-color: #0054a6;}
+.m-10 {margin-top: 210px;}
+.p-10 { padding: 47px; }
+.main-text{font-size: 65px; font-family: 'Poppins-SemiBold';
+    text-shadow: 2px 2px 5px grey;}
+.main-para {
+    padding: 200px 0 200px 0;
+}
+.header-banner p{font-size: 18px; font-family: Poppins-Light; text-shadow: 2px 2px 2px grey;width: 48%;}
+.blue-text{font-size: 40px; font-family: Poppins-SemiBold; color: #0054a6;}
+.og-txt{font-size: 20px; font-family: Poppins-Bold; color: #f7966b;}
+.bl-txt{font-size: 20px; font-family: Poppins-Bold; color: #0054a6;}
+.gn-txt{font-size: 20px; font-family: Poppins-Bold; color: #40975f;}
+.desk-style{padding: 0 29px;}
+.desk-style img{padding-bottom: 20px;}
+.txt-shadow{text-shadow: 1px 1px 2px grey;}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #0054a6;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 3px solid !important;
+    font-size: 20px;
+    font-family: 'Poppins-Bold';
+    text-transform: uppercase;
+}
+.nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #616368;
+    font-family: 'Poppins-Medium';
+}
+.nav-link:hover {
+    border: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+.m-15 {
+    margin-left: 15em;
+}
+.bl-btn{ background-color: #0054a6; color: #fff; padding: 6px;border-radius: 4px;}
+.inputfile-box { position: relative; }
+.inputfile {
+  display: none;
+}
+.file-box {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #ccc;
+  box-sizing: border-box
+}
+.upload-btn {
+    padding: 0 0 0 28px;
+    margin-top: 6px;
+}
+.form-inner{ padding: 5em; width: 70%;}
+.form-row{ margin-top: 40px;}
+.para-inner{ margin-top: 178px;
+    margin-bottom: 178px; }
+.inner-section{ padding: 48px; }
+.inner-row{ padding: 3em; }
+.inner-row p{ text-align: justify; }
+.btn-img1{background-size: cover;
+    background: url(../img/CTA-Grow-with-us.png) no-repeat center;
+    width: 100%;
+    min-height: 58px;
+    border: 0;
+}
+.btn-img2{background-size: cover;
+    background: url(../img/CTAConnectwithus.png) no-repeat center;
+    width: 100%;
+    min-height: 58px;
+    border: 0;
+}
+.btn-img3{background-size: cover;
+    background: url(../img/CTA-joinus.png) no-repeat center;
+    width: 100%;
+    min-height: 58px;
+    border: 0;
+}
+#contact-form label{
+    font-family: 'Poppins-Light';
+    font-size: 16px;
+}
+.footer-bg p { color: #fff; text-align: center;font-size: 18px;
+    font-family: 'Poppins-Light';}
+.benefits-section{padding-top: 30px;}
+.cat-style{padding-right: 0;}
+@media only screen and (max-width: 600px) {
+	.form-inner {
+	    padding: 40px 0 40px 0;
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+	}
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {font-size: 18px;}
+    .nav-link{font-size: 16px; width: 100%;}
+	.form-row{ margin-left: 0; }
+	.para-inner{ margin-top: 0; margin-bottom: 0;}
+	.main-text{ font-size: 16px; }
+	.header-banner p { font-size: 9px; width: 65%;}
+	.header-banner{ min-height: 0; padding: 10px;}
+	.stay-tuned {
+	    height: 80px;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+	.inner-section {
+        padding: 16px;
+    }
+	.blue-text {
+	    font-size: 20px;
+	}
+	.inner-row{ padding: 20px; }
+	.mob-txt-center{ text-align: center; }
+	.footer-bg img{ width: 200px; }
+	.logo-img {width: 40%;}
+	.mob-text-center{text-align: center;}
+	.footer-bg p { color: #fff; text-align: center;}
+    .benefits-section{padding-top: 20px;}
+    p.og-txt, p.bl-txt, p.gn-txt{text-align: center;}
+    .desk-style {
+        padding: 0;
+    }
+    .card-body{padding: 10px;}
+    .upload-btn{padding: 0 14px;}
+    .cat-style {
+        padding-right: 14px;
+    }
+
+}
+
+@media only screen 
+  and (min-device-width: 736px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  	/*.header-banner{ min-height: 600px; }*/
+
+    .header-banner{ background-size: contain; padding: 38px;}
+    .header-banner p{font-size: 18px;width: 80%;}
+    .nav-link{font-size: 16px;}
+    .logo-img {
+        width: 150px;
+    }
+    .main-text {
+        font-size: 28px;
+    }
+  	.stay-tuned{
+  		background: url(../img/are-you.png) no-repeat;
+	    background-size: cover;
+	    height: 150px;
+  	}
+  	.inner-row {
+	    padding: 1em;
+	}
+	.logo-img {
+	    width: 160px;
+	}
+	.para-inner {
+    	margin-top: 20px;
+        margin-bottom: 20px;
+	}
+    .form-inner{width: 100%;
+    padding: 50px 0px;}
+    .upload-btn {
+        padding: 0 0 0 18px;
+    }
+    .desk-style {
+        padding: 10px;
+    }
+    .card-body{padding: 10px;}
+    .upload-btn{padding: 0 14px;}
+    .cat-style {
+        padding-right: 14px;
+    }
+}
