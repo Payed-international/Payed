@@ -24,10 +24,10 @@ if($company=='')
 
 if(!empty($error))
 	$ajaxRes = array('status' => 0, 'response_code' => 201, 'errors' => $error);
+$uploadStatus =1;
 if(!empty($catalogue["name"])){ 
                  
                 $uploadDir= __DIR__.'/uploads/'; 
-                $uploadStatus =1;
                 $fileName = basename($catalogue["name"]); 
                 $targetFilePath = $uploadDir . $fileName; 
                 $fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION); 
