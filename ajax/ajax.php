@@ -20,8 +20,7 @@ if($email=='' || (filter_var($email,FILTER_VALIDATE_EMAIL)==false))
 	$error["email"]="Please enter a valid email";
 if($company=='')
 	$error["company"]="Company cannot be empty";
-if($catalogue["name"]=='')
-	$error["catalogue"]="Catalogue cannot be empty";
+
 
 if(!empty($error))
 	$ajaxRes = array('status' => 0, 'response_code' => 201, 'errors' => $error);
@@ -32,7 +31,7 @@ if(!empty($catalogue["name"])){
                 $fileName = basename($catalogue["name"]); 
                 $targetFilePath = $uploadDir . $fileName; 
                 $fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION); 
-                $allowTypes = array('pdf', 'doc', 'docx', 'jpg', 'png', 'jpeg'); 
+                $allowTypes = array('pdf', 'doc', 'docx'); 
                 
                 if(in_array($fileType, $allowTypes)){ 
                 	if(@move_uploaded_file($catalogue["tmp_name"], $targetFilePath)){ 
@@ -45,7 +44,7 @@ if(!empty($catalogue["name"])){
                     } 
     				}else{ 
                     $uploadStatus = 0; 
-                    $error["catalogue"]='Sorry, only PDF, DOC, JPG, JPEG, & PNG files are allowed to upload.'; 
+                    $error["catalogue"]='Sorry, only PDF, DOC files are allowed to upload.'; 
                     $ajaxRes = array('status' => 0, 'response_code' => 201, 'errors' => $error);
                 } 
 }
