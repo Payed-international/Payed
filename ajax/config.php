@@ -6,5 +6,4 @@
    }
    
    mysqli_select_db($connection_mysql,"seller");
-   
 ?>

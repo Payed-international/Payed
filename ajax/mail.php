@@ -57,6 +57,3 @@ $headers .= 'From: <enquiry@payed.in>' . "\r\n";
 
 mail($to,$subject,$message,$headers);
 ?>
-
-
-

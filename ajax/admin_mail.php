@@ -90,8 +90,4 @@ $returnpath = "-f" . $from;
  
 // Send email 
 $mail = @mail($to, $subject, $message, $headers, $returnpath);  
-
 ?>
-
-
-
