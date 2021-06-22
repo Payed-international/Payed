@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -332,7 +332,7 @@ $(function(){
                     success: function(data){
                         if (data['status'] == 1) {
                             obj.html("");
-                            obj.html("<h2 class='blue-text text-center' style='font-size:22px'>Thank you for contacting us </h2>");
+                            obj.html("<h2 class='blue-text text-center' style='font-size:16px'>Thank you for your interest in partnering with Payed!<br>We will get back in touch with you soon.  </h2>");
                         } else {
                             if (data['errors'] != '') {
                               $(obj).find("#form_name").removeClass('is-invalid');

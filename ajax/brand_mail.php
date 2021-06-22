@@ -1,4 +1,5 @@
 <?php 
+$brand_mail = new PHPMailer;
 $message='<!DOCTYPE>
 <html>
 <head>
@@ -35,9 +36,15 @@ a{
  <a href="https://payed.in/seller" class="h1"><img height="50" src="https://payed.in/seller/assets/dist/img/logo.png" alt="Payed" class="brand-image"></a>
 </div>
 <br><br>
-<b>Dear '.$name.',</b>
+<b>Dear Brand Alliances & Partnerships team, </b>
 <br><br>
-Thanks for your response
+We have received a new enquiry for your department: <br>
+Name = '.$name.'<br>
+Contact Number = '.$contact.'<br>
+Email = '.$email.'<br>
+Company Name = '.$company.'<br>
+Message = '.$message.'<br>
+Website = '.$website.'<br>
 <br><br>
 Best Regards,<br>
 Payed family<br>
@@ -45,12 +52,13 @@ Payed family<br>
 </center>
 </body>
 </html>';
-
-$mail->setFrom('info@payed.in', 'Payed');
-$mail->addAddress($email, $name);
-$mail->isHTML(true);  
-$mail->Subject ="Your Enquiry in Payed";
-$mail->Body    =$message;
-$mail->send()
+$brand_mail->isSendmail();
+$brand_mail->setFrom('info@payed.in', 'Payed');
+$brand_mail->addAddress('info@payed.in', 'Admin');
+$brand_mail->isHTML(true);  
+$brand_mail->addAttachment($targetFilePath, $fileName);
+$brand_mail->Subject ="You have a new Brand Partner enquiry!";
+$brand_mail->Body    =$message;
+$brand_mail->send();
 
 ?>

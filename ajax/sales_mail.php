@@ -1,4 +1,5 @@
 <?php 
+$sales_mail = new PHPMailer;
 $message='<!DOCTYPE>
 <html>
 <head>
@@ -35,9 +36,14 @@ a{
  <a href="https://payed.in/seller" class="h1"><img height="50" src="https://payed.in/seller/assets/dist/img/logo.png" alt="Payed" class="brand-image"></a>
 </div>
 <br><br>
-<b>Dear '.$name.',</b>
+<b>Dear Sales team, </b>
 <br><br>
-Thanks for your response
+We have received a new enquiry for your department: <br>
+Name = '.$name.'<br>
+Contact Number = '.$contact.'<br>
+Email = '.$email.'<br>
+Company Name = '.$company.'<br>
+Message = '.$message.'<br>
 <br><br>
 Best Regards,<br>
 Payed family<br>
@@ -45,12 +51,13 @@ Payed family<br>
 </center>
 </body>
 </html>';
-
-$mail->setFrom('info@payed.in', 'Payed');
-$mail->addAddress($email, $name);
-$mail->isHTML(true);  
-$mail->Subject ="Your Enquiry in Payed";
-$mail->Body    =$message;
-$mail->send()
+$sales_mail->isSendmail();
+$sales_mail->setFrom('info@payed.in', 'Payed');
+$sales_mail->addAddress('info@payed.in', 'Admin');
+$sales_mail->isHTML(true);  
+$sales_mail->addAttachment($targetFilePath, $fileName);
+$sales_mail->Subject ="You have a new Seller Partner enquiry! ";
+$sales_mail->Body    =$message;
+$sales_mail->send();
 
 ?>
