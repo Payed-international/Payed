@@ -2,29 +2,52 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Landing Page</title>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<title>Get Payed to Shop - Online Shopping | Shop Online | Buy Online</title>
+<meta name="description" content="Payed is the world's only Unified Products & Services Interface (UPSI) platform. Our omnichannel, single interface offers customers an unbeatable proposition when they avail products/services at offline stores or shop online from a wide array of listed product categories.">
+<meta name="keywords" content="Payed, Shop Online, Rewards, One Stop Shop, Sell on Payed">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/bootstrap-icons.css">
 <link rel="stylesheet" href="css/style.css">
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<link rel="icon" href="img/payed-favicon.png">
+<link rel="canonical" href="https://www.payed.in/" />
+<script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Payed",
+    "url": "https://www.payed.in",
+    "logo": "https://www.payed.in/img/payed-coming-soon-blue.svg",
+    "sameAs": [
+    "Payedofficial",
+    "Payedofficial",
+    "Payed.official",
+    "https://www.youtube.com/channel/UCsTmrPja4NUUG-gEd58036w/",
+    "Payedofficial"
+    ]
+    }
+</script>
 </head>
 <body>
-<div class="pt-1 bg-image header-banner">
-    <div class="container">
-        <a href="#" class="navbar-brand"><img src="img/payed-logo.png" class="logo-img"></a>
+<section class="bg-image header-banner section-div">
+    <img class="banner-image-mob" src="img/ComingSoon-LP-hero-banner.jpg" alt="Banner Image" />
+    <img class="banner-image" src="img/ComingSoon-LP-hero-banner-H-500x-curve.png" alt="Banner Image" />
+
+    <div class="para-inner text-left">
+        <div class="container">
+            <a href="#" class="navbar-brand"><img src="img/payed-coming-soon-blue.svg" class="logo-img"></a>
+            <div class="text-white">
+                <h1 class="main-text">Get Payed to shop</h1>
+                <p class="lead">
+                    Payed is the world's only Unified Products & Services Interface (UPSI) platform. Our omnichannel, single interface offers customers an unbeatable proposition when they avail products/services at offline stores or shop online from a wide array of listed product categories. 
+                </p>
+            </div>
+        </div>        
     </div>
-    <div class="container para-inner text-left">
-        <div class="text-white">
-            <h1 class="main-text">Get Payed to shop</h1>
-            <p class="lead">
-                Payed is the world's only Unified Products & Services Interface (UPSI) platform. Our omnichannel, single interface offers customers an unbeatable proposition when they avail products/services at offline stores or shop online from a wide array of listed product categories. 
-            </p>
-        </div>
-    </div>
-</div>
-<div class="benefits-section container-fluid">
+</section>
+<section class="container-fluid benefits-section">
     <div class="container">
         <h1 class="blue-text text-center">One platform. Unlimited benefits.</h1>
         <div class="row inner-row">
@@ -49,13 +72,13 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 <div class="container-fluid stay-tuned">
     <div class="container inner-section text-center">
         <h2 class="blue-text font-size txt-shadow">Are you ready to get Payed? Stay tuned!</h2>
     </div>
 </div>
-<div class="container-fluid">
+<div class="container-fluid payed-partner">
     <div class="container form-inner">
         <h2 class="blue-text text-center">Partner with Payed</h2>
         <div class="row form-row justify-content-center">
@@ -122,6 +145,7 @@
                                                     </span>
                                                 </label>
                                             </div>
+                                            <p class="pl-3">Note: Max Size-10 MB & PDF, DOC, JPG, JPEG, & PNG files are allowed</p>
                                         </div>
                                         <div class="form-group row"> 
                                             <div class="col-md-4">
@@ -133,7 +157,7 @@
                                         </div>
                                         <div class="row"> 
                                              <input type="hidden" name="type" value="seller-partner" id="type">
-                                            <button type="submit" class="btn-img1 pt-2"></button>
+                                            <button type="submit" class="btn-img1 submit_btn pt-2"></button>
                                         </div>
                                     </form>
                                 </div>
@@ -201,6 +225,7 @@
                                                     </span>
                                                 </label>
                                             </div>
+                                            <p class="pl-3">Note: Max Size-10 MB & PDF, DOC, JPG, JPEG, & PNG files are allowed</p>
                                         </div>
                                         <div class="form-group row"> 
                                             <div class="col-md-4">
@@ -212,7 +237,7 @@
                                         </div>
                                         <div class="row"> 
                                             <input type="hidden" name="type" value="brand-partners" id="type">
-                                            <button type="submit" class="btn-img1 pt-2"></button>
+                                            <button type="submit" class="btn-img2 submit_btn pt-2"></button>
                                         </div>
                                     </form>
                                 </div>
@@ -272,6 +297,7 @@
                                                     </span>
                                                 </label>
                                             </div>
+                                            <p class="pl-3">Note: Max Size-10 MB & PDF, DOC, JPG, JPEG, & PNG files are allowed</p>
                                         </div>
                                         <div class="form-group row"> 
                                             <div class="col-md-4">
@@ -283,7 +309,7 @@
                                         </div>
                                         <div class="row"> 
                                               <input type="hidden" name="type" value="careers" id="type">
-                                            <button type="submit" class="btn-img1 pt-2"></button>
+                                            <button type="submit" class="btn-img3 submit_btn pt-2"></button>
                                         </div>
                                     </form>
                                 </div>
@@ -298,7 +324,7 @@
 <div class="container-fluid footer-bg">
     <div class="container">
         <div class="row justify-content-center p-3">
-            <img src="img/footer-logo.png">
+            <img src="img/payed-coming-soon-white.svg">
         </div>
         <div class="row justify-content-center para-style">
             <p>Copyright © 2021 Payed International Freemoney Limited. All rights reserved.</p>
@@ -309,7 +335,7 @@
     
         
 $(function(){
-     $(".btn-img1").on('click',function(e) {
+     $(".submit_btn").on('click',function(e) {
         e.preventDefault();
         var type=$(this).parent().find("#type").val();
         var obj;
@@ -320,65 +346,65 @@ $(function(){
         }else if(type=='careers'){
             obj=$("#careers")
         }
-
-                $.ajax({
-                    url: obj.attr('action'),
-                    data: new FormData(obj[0]),
-                    dataType: "json",
-                    type: "POST",
-                    contentType: false,
-                    processData: false,
-                    async:false,
-                    success: function(data){
-                        if (data['status'] == 1) {
-                            obj.html("");
-                            obj.html("<h2 class='blue-text text-center' style='font-size:22px'>Thank you for contacting us </h2>");
-                        } else {
-                            if (data['errors'] != '') {
-                              $(obj).find("#form_name").removeClass('is-invalid');
-                              $(obj).find("#form_name").parent().find(".text-danger").remove();
-                              $(obj).find("#form_contact").removeClass('is-invalid');
-                              $(obj).find("#form_contact").parent().find(".text-danger").remove();
-                              $(obj).find("#form_email").removeClass('is-invalid');
-                              $(obj).find("#form_email").parent().find(".text-danger").remove();
-                              $(obj).find("#form_company").removeClass('is-invalid');
-                              $(obj).find("#form_company").parent().find(".text-danger").remove();
-                              $(obj).find("#form_catalogue").removeClass('is-invalid');
-                              $(obj).find("#form_catalogue").parent().find(".text-danger").remove();
-                              $(obj).find("#form_catalogue1").removeClass('is-invalid');
-                              $(obj).find("#form_catalogue1").parent().find(".text-danger").remove();
-                              $(obj).find("#form_catalogue2").removeClass('is-invalid');
-                              $(obj).find("#form_catalogue2").parent().find(".text-danger").remove();
-                                $.each(data['errors'], function(key, value) {
-                                    $(obj).find("#form_" + key).addClass('is-invalid');
-                                    $(obj).find("#form_" + key).parent().append('<span class="text-danger">' + value + '</span>');
-                                });
-                                return false;
-                            } else {
-                                alert("Something went wrong. Please try again.");
-                                return false;
-                            }
-                        }
+        $.ajax({
+            url: obj.attr('action'),
+            data: new FormData(obj[0]),
+            dataType: "json",
+            type: "POST",
+            contentType: false,
+            processData: false,
+            async:false,
+            success: function(data){
+                if (data['status'] == 1) {
+                    obj.html("");
+                    obj.html("<h2 class='blue-text text-center' style='font-size:22px'>Thank you for contacting us </h2>");
+                } else {
+                    if (data['errors'] != '') {
+                      $(obj).find("#form_name").removeClass('is-invalid');
+                      $(obj).find("#form_name").parent().find(".text-danger").remove();
+                      $(obj).find("#form_contact").removeClass('is-invalid');
+                      $(obj).find("#form_contact").parent().find(".text-danger").remove();
+                      $(obj).find("#form_email").removeClass('is-invalid');
+                      $(obj).find("#form_email").parent().find(".text-danger").remove();
+                      $(obj).find("#form_company").removeClass('is-invalid');
+                      $(obj).find("#form_company").parent().find(".text-danger").remove();
+                      $(obj).find("#form_catalogue").removeClass('is-invalid');
+                      $(obj).find("#form_catalogue").parent().find(".text-danger").remove();
+                      $(obj).find("#form_catalogue1").removeClass('is-invalid');
+                      $(obj).find("#form_catalogue1").parent().find(".text-danger").remove();
+                      $(obj).find("#form_catalogue2").removeClass('is-invalid');
+                      $(obj).find("#form_catalogue2").parent().find(".text-danger").remove();
+                        $.each(data['errors'], function(key, value) {
+                            $(obj).find("#form_" + key).addClass('is-invalid');
+                            $(obj).find("#form_" + key).parent().append('<span class="text-danger">' + value + '</span>');
+                        });
+                        return false;
+                    } else {
+                        alert("Something went wrong. Please try again.");
+                        return false;
                     }
-                });
-            });
-            $("#form_catalogue").change(function() {
-                var file = this.files[0].name;
-                $(this).parent().find("#file-name").val(file);
-                
-            });
-            $("#form_catalogue1").change(function() {
-                var file = this.files[0].name;
-                $(this).parent().find("#file-name1").val(file);
-                
-            });
-            $("#form_catalogue2").change(function() {
-                var file = this.files[0].name;
-                $(this).parent().find("#file-name2").val(file);
-                
-            });
+                }
+            }
         });
-    
+    });
+    $("#form_catalogue").change(function() {
+        var file = this.files[0].name;
+        $(this).parent().find("#file-name").val(file);
+        
+    });
+    $("#form_catalogue1").change(function() {
+        var file = this.files[0].name;
+        $(this).parent().find("#file-name1").val(file);
+        
+    });
+    $("#form_catalogue2").change(function() {
+        var file = this.files[0].name;
+        $(this).parent().find("#file-name2").val(file);
+        
+    });
+});
+
+
 </script>
 </body>
 </html>
