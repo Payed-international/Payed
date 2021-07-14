@@ -1,8 +1,5 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
+RewriteCond %{HTTP_HOST} ^www.payed.in
+RewriteRule (.*) https://payed.in/$1 [R=301,L]
 </IfModule>
