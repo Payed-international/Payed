@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 <title>Get Payed to Shop - Online Shopping | Shop Online | Buy Online</title>
-<meta name="description" content="Payed is the world's only Unified Products & Services Interface (UPSI) platform. Our omnichannel, single interface offers customers an unbeatable proposition when they avail products/services at offline stores or shop online from a wide array of listed product categories.">
+<meta name="description" content="Payed is the world's only Unified Products & Services Interface (UPSI) 
+      platform. Our omnichannel, single interface offers customers an unbeatable proposition when 
+      they avail products/services at offline stores or shop online from a wide array of listed product 
+      categories.">
 <meta name="keywords" content="Payed, Shop Online, Rewards, One Stop Shop, Sell on Payed">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/bootstrap-icons.css">
@@ -13,6 +17,15 @@
 <script src="js/bootstrap.bundle.min.js"></script>
 <link rel="icon" href="img/payed-favicon.png">
 <link rel="canonical" href="https://www.payed.in/" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WM50CW3X03"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WM50CW3X03');
+</script>
 <script type="application/ld+json">
     {
     "@context": "https://schema.org",
@@ -145,7 +158,7 @@
                                                     </span>
                                                 </label>
                                             </div>
-                                            <p class="pl-3">Note: Max Size-10 MB & PDF, DOC, JPG, JPEG, & PNG files are allowed</p>
+                                            <p class="pl-3 note-txt">Max Size-10 MB & PDF, DOC files are allowed</p>
                                         </div>
                                         <div class="form-group row"> 
                                             <div class="col-md-4">
@@ -225,7 +238,7 @@
                                                     </span>
                                                 </label>
                                             </div>
-                                            <p class="pl-3">Note: Max Size-10 MB & PDF, DOC, JPG, JPEG, & PNG files are allowed</p>
+                                            <p class="pl-3 note-txt">Max Size-10 MB & PDF, DOC files are allowed</p>
                                         </div>
                                         <div class="form-group row"> 
                                             <div class="col-md-4">
@@ -297,7 +310,7 @@
                                                     </span>
                                                 </label>
                                             </div>
-                                            <p class="pl-3">Note: Max Size-10 MB & PDF, DOC, JPG, JPEG, & PNG files are allowed</p>
+                                            <p class="pl-3 note-txt">Max Size-10 MB & PDF, DOC files are allowed</p>
                                         </div>
                                         <div class="form-group row"> 
                                             <div class="col-md-4">
